@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- doctype helps the browser understand what type of file it is expectiing -->
+<html>
+  <!-- master tag-->
+  <head>
+    <!-- not meant to be seen by the user. The content here is the additional information consumed by the browser to give the proper output-->
+    <meta charset="UTF-8" />
+    <title>My page</title>
+    <style>
+      .blue {
+        color: blue;
+      }
+      .red {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Image tag example-->
+    <div>
+      <img
+        src="download.jpg"
+        alt="HTML logo"
+        style="max-width: 100%; height: auto"
+      />
+    </div>
+
+    <p id="myID">
+      Hello <br />
+      <a href="https://www.google.com" target="_blank">world</a>
+    </p>
+    <!--Html Lists-->
+    <div>
+      <!--Ordered list -->
+      <h3>How to make tea</h3>
+      <ol type="I">
+        <li>Boil water in a kettle or pot.</li>
+        <li>Add tea leaves or a tea bag to a cup.</li>
+        <li>Pour the boiling water over the tea leaves or tea bag.</li>
+        <li>Serve hot</li>
+      </ol>
+      <!--Unordered list -->
+      <h3>Shopping list</h3>
+      <ul>
+        <li>
+          Bread
+          <ul style="list-style-type: square">
+            <li>brown bread</li>
+            <li>white bread</li>
+            <li>cream bread</li>
+          </ul>
+        </li>
+        <li>milk</li>
+        <li>eggs</li>
+        <li>Butter</li>
+      </ul>
+      <!-- description list-->
+      <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+        <dd>Standard markup language for creating web pages.</dd>
+
+        <dt>CSS</dt>
+        <dd>
+          Style sheet language used for describing the look and formatting of a
+          document.
+        </dd>
+      </dl>
+    </div>
+    <!--HTML Table example-->
+    <div>
+      <table border="1">
+        <colgroup>
+          <col span="1" style="background-color: lightblue" />
+          <col span="2" style="background-color: lightgreen" />
+        </colgroup>
+        <caption>
+          Student Marks
+        </caption>
+
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Math</th>
+            <th>Science</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Hasiba</td>
+            <td>93</td>
+            <td>99</td>
+          </tr>
+          <tr>
+            <td>John</td>
+            <td>78</td>
+            <td>85</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>Total Students</td>
+            <td colspan="2">2</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <!--class attribute example-->
+    <div>
+      <h1 class="blue">Hello, world!</h1>
+      <h2 class="red">Hello, world!</h2>
+      <p>Welcome to my site</p>
+      <hr />
+      <p>Here is some information about me:</p>
+      <div title="My name">
+        My name is
+        <span style="color: purple; font-weight: bold">Hasiba.</span>
+      </div>
+      <div>My favorite color is blue.</div>
+      <p>My favorite food is pizza.</p>
+      <p>Go to <a href="new.html">New page</a></p>
+      <p>
+        send Email to
+        <a href="mailto:myemail@myemail.com">myemail@myemail.com</a>
+      </p>
+    </div>
+    <div>
+      Hello world blah blah blah blah blah blah blah blah blah
+      <a href="#myID">Go to the top</a>
+    </div>
+    <!-- Practice Button tag-->
+    <button onclick="alert('Hello! This is inline js.')">Click me</button>
+  </body>
+</html>
